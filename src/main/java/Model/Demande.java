@@ -6,6 +6,7 @@ import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
@@ -73,6 +74,7 @@ public class Demande {
 	/**
 	 * Id demande
 	 */
+        @Id
 	@Column(name="ID_DEMANDE")
 	@GeneratedValue(strategy=GenerationType.TABLE)
 	private int idDemande;
